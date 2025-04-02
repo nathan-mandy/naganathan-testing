@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slanted-container {
+            transform: skewY(-10deg);
+            height:400px;
+            width:100%;
+            background-color: aliceblue;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .slanted-container .image {
+            transform: skewY(-10deg);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width:600px;
+            border-radius: 50px;
+            height:100%;
+            background-size:cover;
+            background-position:center;
+            background-image:url('https://images.ctfassets.net/ihx0a8chifpc/GTlzd4xkx4LmWsG1Kw1BB/ad1834111245e6ee1da4372f1eb5876c/placeholder.com-1280x720.png');
+        }
+        .slanted-container-new {
+            background-color: burlywood;
+            transform: skewY(-10deg);
+            height:400px;
+            width:100%;
+            z-index: -1;
+            position: relative;
+        }
+     </style>
+</head>
+<body>
+    <div class="slanted-container">
+        <div class="image">
+        </div>
+     </div>
+     <div class="slanted-container-new">
+     </div>
+</body>
+</html>
